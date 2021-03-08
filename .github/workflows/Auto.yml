@@ -1,6 +1,5 @@
 name: Builder
 
-
 on:
   push:
     branches: [Lab1]
@@ -19,10 +18,3 @@ jobs:
           make Lab1_2_Test
           ./Lab1_2_Test 
         
-  pre-commit:
-
-    runs-on: Ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
-      - uses: pre-commit/action@v2.0.0
